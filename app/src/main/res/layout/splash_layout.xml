@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
 
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/companyLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-85dp"
+        android:fontFamily="@font/oifont"
+        android:text="My Frutas"
+        android:textColor="@color/verdeClaro"
+        android:textSize="45dp" />
 
     <ImageView
         android:id="@+id/companyLogo"
@@ -23,9 +34,9 @@
         android:indeterminate="true"
         android:layout_centerInParent="true"
         android:layout_below="@+id/companyLogo"
-        android:layout_marginTop="15px"
-        app:indicatorColor="#F2B50B"
-        app:indicatorSize="500px"
+        android:layout_marginTop="25dp"
+        app:indicatorColor="@color/amarelo"
+        app:indicatorSize="150px"
         app:trackThickness="15px"
 
         />
