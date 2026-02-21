@@ -1,6 +1,7 @@
 package br.com.etecia.myfrutas;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +9,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputEditText;
+
 public class LoginActivity extends AppCompatActivity {
+        MaterialButton btnLogin;
+        TextView txtRecSenha, txtCadastro;
+        TextInputEditText emailInput, passwordInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +27,14 @@ public class LoginActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        btnLogin = findViewById(R.id.btnLogin);
+        txtRecSenha  = findViewById(R.id.txtRecSenha);
+        txtCadastro  = findViewById(R.id.txtCadastro);
+        emailInput = findViewById(R.id.emailInput);
+        passwordInput = findViewById(R.id.passwordInput);
+
+        txtCadastro.setOnClickListener();
+                txtRecSenha.setOnClickListener();
     }
 }
