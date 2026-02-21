@@ -71,6 +71,7 @@
             android:layout_height="wrap_content"
             android:hint="Digite sua senha"
             android:inputType="textPassword"
+
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -91,6 +92,7 @@
             android:layout_weight="1"
             android:textColor="@color/amarelo"
             android:textSize="12sp"
+            android:buttonTint="@color/amarelo"
             />
 
         <TextView
@@ -111,6 +113,17 @@
         android:layout_below="@+id/LinearLayout"
         android:backgroundTint="@color/verdeClaro"
         android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Não possui conta? | Cadastre-se"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/amarelo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
         />
 
 
