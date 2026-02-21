@@ -75,10 +75,32 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/LinearLayout"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        />
+        android:layout_below="@+id/txtInputLayout2"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+
+        >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Permanecer Conectado"
+            android:layout_weight="1"
+            android:textColor="@color/amarelo"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esqueceu a Senha?"
+            android:textColor="@color/amarelo"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="350dp"
@@ -86,7 +108,9 @@
         android:layout_centerHorizontal="true"
         android:text="Entrar"
         android:textSize="20sp"
-        android:layout_below="@+id/"
+        android:layout_below="@+id/LinearLayout"
+        android:backgroundTint="@color/verdeClaro"
+        android:layout_marginTop="25dp"
         />
 
 
